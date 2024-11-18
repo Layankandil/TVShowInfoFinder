@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Information Finder</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1>TV Show Information Finder</h1>
+        <h3>Find information about a certain TV show by writing the show name below</h3>
+    </header>
+    <main>
+        <section>
+            <form id="searchForm">
+                <input type="text" id="query" placeholder="Enter TV show name here" required aria-label="TV show name">
+                <button type="submit" aria-label="Search for TV shows">Search</button>
+                <button type="button" id="clearResults" aria-label="Clear search results">Clear Results</button>
+            </form>
+        </section>
+        <section id="results"></section>
+        <div id="loading" aria-live="polite" style="display: none;">
+            <div class="spinner"></div>
+            Loading...
+        </div>
+        <div id="errorMessage" class="error" aria-live="assertive" style="display: none;"></div>
+    </main>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
